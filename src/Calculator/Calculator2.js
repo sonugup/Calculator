@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import "./calculator"
 
 const Calculator2 = () => {
     const [input, setInput] = useState("")
