@@ -35,7 +35,6 @@ const Calculator = () => {
         <button onClick={() => subNumber(num1, num2)} >Sub</button>
         <button onClick={() => mulNumber(num1, num2)} >Mul</button>
         <button onClick={() => divNumber(num1, num2)} >Div</button>
-     
 </div>
          </div>
     </div>
