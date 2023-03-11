@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { number } from 'yargs'
 import "./calculator.css"
 
 const Calculator = () => {
@@ -27,8 +28,8 @@ const Calculator = () => {
     <div className='box'>
       <div className='boxdiv'>
         <h1>Your Output {result} </h1>
-        <input value={num1} onChange={(el) => setNum1(el.target.value)} placeholder="Number1" />
-        <input value={num2} onChange={(el) => setNum2(el.target.value)} placeholder="Number2"/>
+        <input type="number" value={num1} onChange={(el) => setNum1(el.target.value)} placeholder="Number1" />
+        <input type="number" value={num2} onChange={(el) => setNum2(el.target.value)} placeholder="Number2"/>
 
 <div className='btn'>
 <button onClick={() => addNumber(num1, num2)} >Add</button>

@@ -1,14 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-import Todo from "./Componets/Todo";
 import Calculator from "./Calculator/Calculator";
+import Calculator2 from "./Calculator/Calculator2";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Calculator />
+        {/* <Calculator /> */}
+        <Calculator2/>
       </header>
     </div>
   );
