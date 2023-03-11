@@ -33,7 +33,7 @@ try{
 let res= await fetch(`https://practice-ia-test.herokuapp.com/posts`)
 let data=await res.json();
 
-// console.log(data);
+console.log(data);
 setTodo(data)
 }
 catch(er){
@@ -48,7 +48,7 @@ useEffect(() => {
 }, []);
 
   const handleChange=(e)=>{
-setData(e.target.value)
+// setData(e.target.value)
 // let inp= e.target.name
 // setData({
 //   ...data,
@@ -66,12 +66,14 @@ onChange={handleChange}/>
 
 
 {
-  todo && todo.map((item)=>(
+  todo && todo.map((item)=>{
+    return (
       <div key={item.id} style={{background:"gray"}}>
         <h1>{item.data}</h1>
 
       </div>
-  ))
+  )
+  })
 }
 
     </div>

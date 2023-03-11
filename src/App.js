@@ -7,7 +7,6 @@ import Calculator from './Calculator/Calculator';
 function App() {
   return (
     <div className="App">
-      {/* < Todo/> */}
       
       <header className="App-header">
       <Calculator/>
