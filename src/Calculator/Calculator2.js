@@ -20,7 +20,7 @@ const Calculator2 = () => {
         setInput("")
     }
   return (
-    <div>
+    <div className="box">
       <div className="calculator">
       <h1>Calculator1 Build by :- Dibyanshu</h1>
       <input type="text" value={input} />
